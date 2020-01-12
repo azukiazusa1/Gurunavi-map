@@ -18,6 +18,7 @@
           ref="mapRef"
           :center="{lat:35.658034, lng:139.701636}"
           :zoom="15"
+          :options="mapOptions"
           style="width: 100%; height: 100%"
           @idle="place()"
         >
@@ -52,7 +53,10 @@ export default {
         longitude: 139.701636,
         hit_per_page: 100
       },
-      clusterZoom: 18
+      clusterZoom: 18,
+      mapOptions: {
+        gestureHandling: "greedy"
+      }
     }
   },
   methods: {
