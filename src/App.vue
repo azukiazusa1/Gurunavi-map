@@ -18,7 +18,6 @@
           ref="mapRef"
           :center="{lat:35.658034, lng:139.701636}"
           :zoom="15"
-          map-type-id="terrain"
           style="width: 100%; height: 100%"
           @idle="place()"
         >

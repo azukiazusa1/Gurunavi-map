@@ -11,7 +11,7 @@
         <div>定休日：{{rest.holiday}}</div>
         <img v-bind:src="rest.image_url.shop_image1"/>
         <img v-bind:src="rest.image_url.shop_image2"/>
-        <a href="${this.rest.url}" target="_blank">詳細</a>
+        <a v-bind:href="rest.url" target="_blank">詳細</a>
   </div>
 </template>
 <script>
